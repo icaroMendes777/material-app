@@ -1,0 +1,59 @@
+
+h3{
+  font-weight: 700;
+}
+
+.component_box{
+  // width: 100vw;
+  display:flex;
+  justify-content: center;
+
+}
+
+.wrap_component{
+
+
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+
+  max-width: 600px;
+
+
+  >div{
+    padding: 1rem;
+    margin:1rem;
+    background-color: #bfaedf61;
+  }
+}
+
+.intro_box{
+  padding:2rem!important;
+  color:#673ab7;
+  border:none!important;
+
+}
+
+.example{
+  margin: 1rem;
+  padding: 2rem;
+
+}
+
+
+@media only screen and (max-width:700px) {
+
+  .wrap_component{
+    max-width: 400px;
+  }
+}
+
+
+
+@media only screen and (max-width:450px) {
+
+  .wrap_component{
+    max-width: 330px;
+  }
+}

@@ -1,5 +1,215 @@
-<p>I'm here!!</p>
 
 
-<mat-slide-toggle>Toggle me!</mat-slide-toggle>
+<div class="component_box">
 
+<div class="wrap_component">
+
+
+      <mat-toolbar color="primary">
+
+        <span>Angular Material: Sweet!</span>
+        <span class="example-spacer"></span>
+
+      </mat-toolbar>
+      <div class="intro_box">
+      <p>Componentes prontos, estilizados e responsivos com um mínimo de código.</p>
+      <p>Abaixo alguns exemplos de componentes da biblioteca.</p>
+    </div>
+
+      <div>
+        <h3>Slide Toggle</h3>
+        <hr/>
+        <div class="example">
+         <mat-slide-toggle>Clique!</mat-slide-toggle>
+
+        </div>
+      </div>
+
+
+      <div>
+        <h3>Datepicker</h3>
+        <hr/>
+        <div class="example">
+        <mat-form-field appearance="fill">
+          <mat-label>Enter a date</mat-label>
+          <input matInput [matDatepicker]="picker">
+          <mat-hint>MM/DD/YYYY</mat-hint>
+          <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+
+        </div>
+      </div>
+
+      <div>
+        <h3>Abas</h3>
+      <hr/>
+
+      <div class="example">
+        <mat-tab-group>
+          <mat-tab label="Primeira"> <h4>Primeira aba</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati iste, consequuntur officiis doloremque laborum facilis consequatur repellendus ullam reiciendis ea magnam quam, voluptatum distinctio optio voluptate autem eum delectus! Architecto?</p>
+                <img src="https://picsum.photos/id/684/600/400" alt="">
+              </mat-tab>
+          <mat-tab label="Segunda"> <h4>Segunda aba</h4>
+                <p> ipsum dolor, sit amet consectetur adipisicing elit. Illo nihil obcaecati quod excepturi minima incidunt iure quis, exercitationem doloremque facilis saepe consectetur a maxime recusandae quidem assumenda cum dolor. Iusto.</p>
+
+                <img src="https://picsum.photos/id/685/600/400" alt="">
+              </mat-tab>
+          <mat-tab label="Terceira"> <h4>Terceira aba</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo error perspiciatis sed voluptatum soluta ducimus hic culpa enim aperiam magnam. Ullam, cupiditate magni. Ab nulla sapiente quisquam. Architecto, placeat repellendus!</p>
+                <img src="https://picsum.photos/id/686/600/400" alt="">
+              </mat-tab>
+        </mat-tab-group>
+
+        </div>
+      </div>
+
+
+      <div>
+        <h3>Lista com "Chips"</h3>
+        <hr/>
+        <div class="example">
+        <mat-chip-listbox aria-label="Fish selection">
+          <mat-chip-option>Normal-1</mat-chip-option>
+          <mat-chip-option>normal-2</mat-chip-option>
+          <mat-chip-option>normal-3</mat-chip-option>
+          <mat-chip-option color="accent" selected>Destaque</mat-chip-option>
+          <mat-chip-option color="warn">Aviso</mat-chip-option>
+        </mat-chip-listbox>
+
+        </div>
+      </div>
+
+      <div>
+        <h3>Selects</h3>
+      <hr/>
+      <section class="example-section" >
+        <h3>Pedido açaí</h3>
+        <h4>Escolha os acompanhamentos:</h4>
+        <p><mat-checkbox >Leite condensado</mat-checkbox></p>
+        <p><mat-checkbox >Spaceball</mat-checkbox></p>
+        <p><mat-checkbox >Leite em pó</mat-checkbox></p>
+        <p><mat-checkbox >Mouse de maracujá</mat-checkbox></p>
+      </section>
+    </div>
+
+
+    <div>
+      <h3>Cards/cartões</h3>
+    <hr/>
+    <section class="example-section" >
+
+
+
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title-group>
+            <mat-card-title>Titulo 1</mat-card-title>
+            <mat-card-subtitle>pequeno</mat-card-subtitle>
+
+            <img mat-card-sm-image src="https://picsum.photos/id/683/600/400" >
+          </mat-card-title-group>
+        </mat-card-header>
+        <mat-card-content>
+          {{longText}}
+        </mat-card-content>
+      </mat-card>
+
+      <br/>
+
+
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title-group>
+            <mat-card-title>Titulo 2</mat-card-title>
+            <mat-card-subtitle>Médio</mat-card-subtitle>
+            <img mat-card-lg-image src="https://picsum.photos/id/682/600/400" >
+          </mat-card-title-group>
+        </mat-card-header>
+        <mat-card-content>
+          {{longText}}
+        </mat-card-content>
+      </mat-card>
+
+      <br/>
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title-group>
+            <mat-card-title>Titulo 3</mat-card-title>
+            <mat-card-subtitle>Grande</mat-card-subtitle>
+            <img mat-card-xl-image src="https://picsum.photos/id/681/600/400" >
+          </mat-card-title-group>
+        </mat-card-header>
+        <mat-card-content>
+          {{longText}}
+        </mat-card-content>
+      </mat-card>
+
+
+
+
+
+    </section>
+  </div>
+
+
+
+  <div>
+    <h3>Seleção de opções</h3>
+  <hr/>
+  <section class="example-section" >
+    <br/><br/>
+    <mat-button-toggle-group name="fontStyle" aria-label="Font Style" multiple>
+      <mat-button-toggle value="bold"><b>Bold</b></mat-button-toggle>
+      <mat-button-toggle value="italic"><i>Italic</i></mat-button-toggle>
+      <mat-button-toggle value="underline"><u>Underline</u></mat-button-toggle>
+    </mat-button-toggle-group>
+    <br/><br/>
+  </section>
+</div>
+
+
+
+  <div>
+    <h3>Botões com Dica</h3>
+    <hr/>
+    <div class="example">
+
+      <br/>
+        <button mat-raised-button
+        matTooltip="Explodir base secreta!"
+        aria-label="botão de Auto-destruição">
+        Auto-destruição
+        </button>
+
+        <br/>
+        <br/>
+
+        <button mat-raised-button
+        matTooltip="Lançar skynet"
+        aria-label="lança a skynet">
+        Guerra das máquinas
+        </button>
+
+        <br/>
+        <br/>
+        <button mat-raised-button
+        matTooltip="Lançar armas nuclares"
+        aria-label="lança uma guerra nuclear">
+        Fim do mundo
+        </button>
+
+
+        <br/>
+
+    </div>
+  </div>
+
+
+
+
+
+</div>
+
+</div>
